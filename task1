@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    
+        byte a1 = 127;
+        short b1 = 32767;
+        int c1 = 2147483647;
+        long d1 = 9223372036854775807L;
+        float e1 = 120.0f;
+        double f1 = 15.72775;
+        boolean g1 = false;
+        char h1 = '\uffff';
+        
+        int a = 9;
+        int b = 4151420;
+        int c = 2311420;
+        int d = 2015;
+        int e = a*(b+(c/d));
+        
+        System.out.println(e)
+        Scanner inner = new Scanner(System.in);
+        System.out.println("Input a number(ts gotta be the number from 10 to 20 or 'i' will give 'false'): ");
+        int f = inner.nextInt();
+        if (f >= 10 && f <= 20) {
+            System.out.println("true:)");
+        } else {
+            System.out.println("false:(");
+        }
+
+        System.out.println("Input a number so 'i' will say if its even or no: ");
+        int g = inner.nextInt();
+        if (g % 2 == 0) {
+            System.out.println("even (ﾉﾟ▽ﾟ)ﾉ");
+        } else {
+            System.out.println("odd number (ﾉ-_-)ﾉ");
+        }
+        
+        System.out.println("Input a negative number so 'i' will say 'true' or nothing: ");
+        int h = inner.nextInt();
+        if (h < 0) {
+            System.out.println("true (≖ ‿ ≖)");
+        } else {
+            System.out.println("✿_✿");
+        }
+
+        System.out.println("Ыыедите год: ");
+        int j = inner.nextInt();
+        if (j % 4 == 0 && j % 100 != 0 || j % 400 ==0) {
+            System.out.println("Високосный");
+        } else {
+            System.out.println("Невисокосный");
+        }
+    }
+}
